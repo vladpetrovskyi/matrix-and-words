@@ -28,6 +28,8 @@ public class Main {
                     answer.append("[")
                             .append(getIndexes(charMatrix, current))
                             .append("]");
+                } else {
+                    return "Word can't be created from given character sequence!";
                 }
             } else {
                 if (checkIfNear(charMatrix, current,
@@ -35,6 +37,8 @@ public class Main {
                     answer.append("[")
                             .append(getIndexes(charMatrix, current))
                             .append("]->");
+                } else {
+                    return "Word can't be created from given character sequence!";
                 }
             }
             charNum++;
